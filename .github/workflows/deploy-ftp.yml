@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Validate required secrets
         run: |
@@ -45,13 +47,17 @@ jobs:
             **/.vscode/**
             **/node_modules/**
             **/upload/**
+            bitrix/admin/**
             **/bitrix/admin/**
             **/bitrix/cache/**
             **/bitrix/managed_cache/**
+            bitrix/modules/**
             **/bitrix/modules/**
+            bitrix/panel/**
             **/bitrix/panel/**
             **/bitrix/stack_cache/**
             **/bitrix/tmp/**
             **/bitrix/backup/**
             **/bitrix/updates/**
+            bitrix/wizards/**
             **/bitrix/wizards/**
