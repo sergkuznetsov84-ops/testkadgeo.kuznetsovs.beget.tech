@@ -25,8 +25,8 @@
 		"SHOW_TITLE" => $paramShowTitle,
 		"TITLE_POSITION" => $paramTitlePosition,
 		"SHOW_PREVIEW_TEXT" => "Y",
-		"RIGHT_TITLE" => "Перейти в раздел",
-		"RIGHT_LINK" => "contacts/",
+		"RIGHT_TITLE" => "Выбрать район",
+		"RIGHT_LINK" => "districts/",
 		"CODE_BLOCK" => "MAPS",
 		"WIDE" => "FROM_THEME",
 		"OFFSET" => "FROM_THEME",
@@ -37,7 +37,7 @@
 		"ELEMENT_SORT_ORDER2" => "desc",
 		"FILTER_NAME" => "arRegionLink",
 		"MAP_TYPE" => "0",
-		"SUBTITLE" => ""
+		"SUBTITLE" => "Выберите район на карте и получите расчет с выездом в день обращения"
 	],
 	false
 );?>
