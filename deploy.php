@@ -10,13 +10,7 @@ $path = __DIR__;
 
 header('Content-Type: text/plain; charset=utf-8');
 
-if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
-	http_response_code(405);
-	echo "Method Not Allowed\nUse POST request.\n";
-	exit;
-}
-
-$token = $_POST['token'] ?? ($_SERVER['HTTP_X_DEPLOY_TOKEN'] ?? '');
+$token = $_POST['token'] ?? ($_GET['token'] ?? ($_SERVER['HTTP_X_DEPLOY_TOKEN'] ?? ''));
 if (!is_string($token) || !hash_equals($deployToken, $token)) {
 	http_response_code(403);
 	echo "Forbidden\n";
