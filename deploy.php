@@ -9,9 +9,8 @@ $path = __DIR__;
 
 header('Content-Type: text/plain; charset=utf-8');
 
-$homeDir = (string)($_SERVER['HOME'] ?? getenv('HOME') ?: '');
-$tokenFile = $homeDir ? rtrim($homeDir, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . '.deploy_token' : '';
-$expectedToken = (string)(getenv('DEPLOY_TOKEN') ?: ($tokenFile && is_file($tokenFile) ? trim((string)file_get_contents($tokenFile)) : ''));
+$tokenFile = __DIR__ . DIRECTORY_SEPARATOR . '.deploy_token';
+$expectedToken = (string)(is_file($tokenFile) ? trim((string)file_get_contents($tokenFile)) : '');
 
 if ($expectedToken === '') {
 	http_response_code(500);
@@ -54,9 +53,8 @@ function runCommand(string $command): array
 $safePath = escapeshellarg($path);
 $steps = [
 	"cd {$safePath} && git rev-parse --is-inside-work-tree",
-	"cd {$safePath} && git fetch origin",
+	"cd {$safePath} && GIT_TERMINAL_PROMPT=0 git fetch origin",
 	"cd {$safePath} && git reset --hard origin/{$branch}",
-	"cd {$safePath} && git clean -fd",
 ];
 
 echo "Deploy path: {$path}\n";
