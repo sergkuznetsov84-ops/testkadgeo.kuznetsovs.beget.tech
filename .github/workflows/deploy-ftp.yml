@@ -34,6 +34,7 @@ jobs:
           port: 21
           local-dir: ./
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          state-name: .ftp-deploy-sync-state.json
           dangerous-clean-slate: false
           exclude: |
             .git/**
@@ -44,9 +45,13 @@ jobs:
             **/.vscode/**
             **/node_modules/**
             **/upload/**
+            **/bitrix/admin/**
             **/bitrix/cache/**
             **/bitrix/managed_cache/**
+            **/bitrix/modules/**
+            **/bitrix/panel/**
             **/bitrix/stack_cache/**
             **/bitrix/tmp/**
             **/bitrix/backup/**
             **/bitrix/updates/**
+            **/bitrix/wizards/**
