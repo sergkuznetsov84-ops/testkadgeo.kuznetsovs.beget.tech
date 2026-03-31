@@ -38,10 +38,8 @@ jobs:
           exclude: |
             .git/**
             .github/**
-            .ftp-deploy-sync-state.json
             **/.git/**
             **/.github/**
-            **/.ftp-deploy-sync-state.json
             **/.idea/**
             **/.vscode/**
             **/node_modules/**
