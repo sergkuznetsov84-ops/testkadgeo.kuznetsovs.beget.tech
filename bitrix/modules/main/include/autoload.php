@@ -298,7 +298,16 @@ Loader::registerAutoLoadClasses(
 	]
 );
 
-Loader::registerHandler([\Bitrix\Main\ORM\Loader::class, 'autoLoad']);
+$ormLoaderFile = __DIR__ . '/../lib/orm/loader.php';
+if (is_file($ormLoaderFile))
+{
+	require_once $ormLoaderFile;
+}
+
+if (class_exists('\Bitrix\Main\ORM\Loader', false) && is_callable([\Bitrix\Main\ORM\Loader::class, 'autoLoad']))
+{
+	Loader::registerHandler([\Bitrix\Main\ORM\Loader::class, 'autoLoad']);
+}
 
 // old class names compatibility
 require_once __DIR__ . '/compatibility.php';
