@@ -1,0 +1,21 @@
+﻿# Bitrix runtime/cache
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/stack_cache/
+/bitrix/tmp/
+/bitrix/updates/
+/bitrix/backup/
+
+# User content (large, not source)
+/upload/
+
+# Local/dev
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+# Large vendor archive
+/bitrix/modules/aspro.allcorp3.tar.gz
+

@@ -1,0 +1,93 @@
+
+11.03.2024 12:29:23 START UPDATE 1.1.11 -> 1.1.12
+
+11.03.2024 12:29:23 FINISH UPDATE 1.1.11 -> 1.1.12
+
+
+11.03.2024 12:29:23 START UPDATE 1.1.12 -> 1.1.13
+
+11.03.2024 12:29:24 FINISH UPDATE 1.1.12 -> 1.1.13
+
+
+11.03.2024 12:29:24 START UPDATE 1.1.13 -> 1.1.14
+
+11.03.2024 12:29:24 FINISH UPDATE 1.1.13 -> 1.1.14
+
+
+11.03.2024 12:29:25 START UPDATE 1.1.14 -> 1.1.15
+
+11.03.2024 12:29:25 FINISH UPDATE 1.1.14 -> 1.1.15
+
+
+11.03.2024 12:29:26 START UPDATE 1.1.15 -> 1.2.0
+
+11.03.2024 12:29:26 FINISH UPDATE 1.1.15 -> 1.2.0
+
+
+11.03.2024 12:29:27 START UPDATE 1.2.0 -> 1.2.1
+
+11.03.2024 12:29:27 FINISH UPDATE 1.2.0 -> 1.2.1
+
+
+11.03.2024 12:29:27 START UPDATE 1.2.1 -> 1.2.2
+
+11.03.2024 12:29:29 FINISH UPDATE 1.2.1 -> 1.2.2
+
+
+11.03.2024 12:29:29 START UPDATE 1.2.2 -> 1.2.3
+
+11.03.2024 12:29:29 FINISH UPDATE 1.2.2 -> 1.2.3
+
+
+25.11.2024 11:58:20 START UPDATE 1.2.3 -> 1.2.4
+
+25.11.2024 11:58:21 Rewrite /include/header/settings.php in s1
+25.11.2024 11:58:21 Rewrite /include/widget_code.php in s1
+25.11.2024 11:58:21 Rewrite /ajax/widget.php in s1
+25.11.2024 11:58:21 Update /company/staff/index.php in s1
+25.11.2024 11:58:21 FINISH UPDATE 1.2.3 -> 1.2.4
+
+
+25.11.2024 11:58:22 START UPDATE 1.2.4 -> 1.2.5
+
+25.11.2024 11:58:22 FINISH UPDATE 1.2.4 -> 1.2.5
+
+
+25.11.2024 11:58:23 START UPDATE 1.2.5 -> 1.2.6
+
+25.11.2024 11:58:23 FINISH UPDATE 1.2.5 -> 1.2.6
+
+
+25.11.2024 11:58:24 START UPDATE 1.2.6 -> 1.2.7
+
+25.11.2024 11:58:25 Rewrite /ajax/js_item_detail.php in s1
+25.11.2024 11:58:25 Rewrite /include/blocks/phones/button_view.php in s1
+25.11.2024 11:58:25 Rewrite /include/blocks/phones/mobile_menu_view.php in s1
+25.11.2024 11:58:25 Rewrite /include/blocks/product/props_catalog_block.php in s1
+25.11.2024 11:58:25 Rewrite /include/blocks/product/props_catalog_detail.php in s1
+25.11.2024 11:58:25 Rewrite /include/blocks/product/props_catalog_list.php in s1
+25.11.2024 11:58:25 Rewrite /include/blocks/product/props_catalog_table.php in s1
+25.11.2024 11:58:25 Rewrite /include/blocks/ui/slider-navigation.php in s1
+25.11.2024 11:58:25 Rewrite /include/blocks/ui/slider-pagination.php in s1
+25.11.2024 11:58:25 FINISH UPDATE 1.2.6 -> 1.2.7
+
+
+25.11.2024 11:58:25 START UPDATE 1.2.7 -> 1.2.8
+
+25.11.2024 11:58:26 FINISH UPDATE 1.2.7 -> 1.2.8
+
+
+25.11.2024 11:58:26 START UPDATE 1.2.8 -> 1.2.9
+
+25.11.2024 11:58:27 FINISH UPDATE 1.2.8 -> 1.2.9
+
+
+25.11.2024 11:58:28 START UPDATE 1.2.9 -> 1.2.10
+
+25.11.2024 11:58:28 Rewrite /include/blocks/images/popup_block_view.php in s1
+25.11.2024 11:58:28 Rewrite /include/mainpage/components/rutube/type_1.php in s1
+25.11.2024 11:58:28 Rewrite /include/mainpage/components/vk_video/type_1.php in s1
+25.11.2024 11:58:28 Rewrite /include/mainpage/components/youtube/type_1.php in s1
+25.11.2024 11:58:28 Rewrite /indexblocks_index1.php in s1
+25.11.2024 11:58:28 FINISH UPDATE 1.2.9 -> 1.2.10
+
