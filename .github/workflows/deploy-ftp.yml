@@ -39,8 +39,12 @@ jobs:
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}
           dangerous-clean-slate: false
           exclude: |
-            **/.git*
+            .git/**
+            .github/**
+            .ftp-deploy-sync-state.json
+            **/.git/**
             **/.github/**
+            **/.ftp-deploy-sync-state.json
             **/.idea/**
             **/.vscode/**
             **/node_modules/**
