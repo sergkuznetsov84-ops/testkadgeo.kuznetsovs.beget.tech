@@ -4,14 +4,23 @@ declare(strict_types=1);
 ignore_user_abort(true);
 set_time_limit(300);
 
-$deployToken = 'CHANGE_ME_TO_LONG_RANDOM_TOKEN';
 $branch = 'main';
 $path = __DIR__;
 
 header('Content-Type: text/plain; charset=utf-8');
 
+$homeDir = (string)($_SERVER['HOME'] ?? getenv('HOME') ?: '');
+$tokenFile = $homeDir ? rtrim($homeDir, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . '.deploy_token' : '';
+$expectedToken = (string)(getenv('DEPLOY_TOKEN') ?: ($tokenFile && is_file($tokenFile) ? trim((string)file_get_contents($tokenFile)) : ''));
+
+if ($expectedToken === '') {
+	http_response_code(500);
+	echo "Deploy token is not configured\n";
+	exit;
+}
+
 $token = $_POST['token'] ?? ($_GET['token'] ?? ($_SERVER['HTTP_X_DEPLOY_TOKEN'] ?? ''));
-if (!is_string($token) || !hash_equals($deployToken, $token)) {
+if (!is_string($token) || !hash_equals($expectedToken, $token)) {
 	http_response_code(403);
 	echo "Forbidden\n";
 	exit;
